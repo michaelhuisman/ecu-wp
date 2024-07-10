@@ -52,4 +52,6 @@ mode: single
 
 The enities wil be visual in the enties screen and can be uses on a dashboard
 
+More info about ecpucon api can be found [here](https://portaal.eplucon.nl/docs/api#/)
 
+This software is provided “as is," and you use the software at your own risk.
