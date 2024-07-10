@@ -1,0 +1,204 @@
+- platform: template
+  sensors:
+    act_vent_rpm:
+      unique_id: wp_act_vert_rpm
+      friendly_name: "Act Vent RPM"
+      unit_of_measurement: 'rpm'
+      value_template: "{{ state_attr('sensor.act_vent_rpm', 'state') }}"
+    active_requests_ww:
+      unique_id: wp_active_request_ww
+      friendly_name: "Active Requests WW"
+      value_template: "{{ state_attr('sensor.active_requests_ww', 'state') }}"
+    alarm_active:
+      unique_id: wp_alarm_active
+      friendly_name: "Alarm Active"
+      value_template: "{{ state_attr('sensor.alarm_active', 'state') }}"
+    brine_circulation_pump:
+      unique_id: wp_brine_circulation_pump
+      friendly_name: "Brine Circulation Pump"
+      unit_of_measurement: 'rpm'
+      value_template: "{{ state_attr('sensor.brine_circulation_pump', 'state') }}"
+    brine_in_temperature:
+      unique_id: wp_brine_in_temperature
+      friendly_name: "Brine In Temperature"
+      unit_of_measurement: '°C'
+      value_template: "{{ state_attr('sensor.brine_in_temperature', 'state') }}"
+    brine_out_temperature:
+      unique_id: wp_brine_out_temperature
+      friendly_name: "Brine Out Temperature"
+      unit_of_measurement: '°C'
+      value_template: "{{ state_attr('sensor.brine_out_temperature', 'state') }}"
+    brine_pressure:
+      unique_id: wp_brine_pressure
+      friendly_name: "Brine Pressure"
+      unit_of_measurement: 'bar'
+      value_template: "{{ state_attr('sensor.brine_pressure', 'state') }}"
+    compressor_speed:
+      unique_id: wp_compressor_speed
+      friendly_name: "Compressor Speed"
+      unit_of_measurement: 'rpm'
+      value_template: "{{ state_attr('sensor.compressor_speed', 'state') }}"
+    condensation_temperature:
+      unique_id: wp_condensation_temperature
+      friendly_name: "Condensation Temperature"
+      unit_of_measurement: '°C'
+      value_template: "{{ state_attr('sensor.condensation_temperature', 'state') }}"
+    configured_indoor_temperature:
+      unique_id: wp_configured_indoor_temperature
+      friendly_name: "Configured Indoor Temperature"
+      unit_of_measurement: '°C'
+      value_template: "{{ state_attr('sensor.configured_indoor_temperature', 'state') }}"
+    current_heating_pump_state:
+      unique_id: wp_current heating_pump_state
+      friendly_name: "Current Heating Pump State"
+      value_template: "{{ state_attr('sensor.current_heating_pump_state', 'state') }}"
+    current_heating_state:
+      unique_id: wp_heating_state
+      friendly_name: "Current Heating State"
+      value_template: "{{ state_attr('sensor.current_heating_state', 'state') }}"
+    cv_pressure:
+      unique_id: wp_cv_pressure
+      friendly_name: "CV Pressure"
+      unit_of_measurement: 'bar'
+      value_template: "{{ state_attr('sensor.cv_pressure', 'state') }}"
+    dg1:
+      unique_id: wp_dg1
+      friendly_name: "DG1"
+      value_template: "{{ state_attr('sensor.dg1', 'state') }}"
+    energy_delivered:
+      unique_id: wp_energy_deleverd
+      friendly_name: "Energy Delivered"
+      unit_of_measurement: 'kWh'
+      value_template: "{{ state_attr('sensor.energy_delivered', 'state') }}"
+    energy_usage:
+      unique_id: wp_energy_usage
+      friendly_name: "Energy Usage"
+      unit_of_measurement: 'kWh'
+      value_template: "{{ state_attr('sensor.energy_usage', 'state') }}"
+    evaporation_temperature:
+      unique_id: wp_evaporation_temperature
+      friendly_name: "Evaporation Temperature"
+      unit_of_measurement: '°C'
+      value_template: "{{ state_attr('sensor.evaporation_temperature', 'state') }}"
+    export_energy:
+      unique_id: wp_export_energy
+      friendly_name: "Export Energy"
+      unit_of_measurement: 'kWh'
+      value_template: "{{ state_attr('sensor.export_energy', 'state') }}"
+    heating_in_temperature:
+      unique_id: wp_heating_in_temperature
+      friendly_name: "Heating In Temperature"
+      unit_of_measurement: '°C'
+      value_template: "{{ state_attr('sensor.heating_in_temperature', 'state') }}"
+    heating_mode:
+      unique_id: wp_heating_mode
+      friendly_name: "Heating Mode"
+      value_template: "{{ state_attr('sensor.heating_mode', 'state') }}"
+    heating_out_temperature:
+      unique_id: wp_heating_out_temperature
+      friendly_name: "Heating Out Temperature"
+      unit_of_measurement: '°C'
+      value_template: "{{ state_attr('sensor.heating_out_temperature', 'state') }}"
+    import_energy:
+      unique_id: wp_import_energy
+      friendly_name: "Import Energy"
+      unit_of_measurement: 'kWh'
+      value_template: "{{ state_attr('sensor.import_energy', 'state') }}"
+    indoor_temperature:
+      unique_id: wp_indoor_temperature
+      friendly_name: "Indoor Temperature"
+      unit_of_measurement: '°C'
+      value_template: "{{ state_attr('sensor.indoor_temperature', 'state') }}"
+    inverter_temperature:
+      unique_id: wp_inverter_temperature
+      friendly_name: "Inverter Temperature"
+      unit_of_measurement: '°C'
+      value_template: "{{ state_attr('sensor.inverter_temperature', 'state') }}"
+    number_of_starts:
+      unique_id: wp_number_of_starts
+      friendly_name: "Number of Starts"
+      value_template: "{{ state_attr('sensor.number_of_starts', 'state') }}"
+    operating_hours:
+      unique_id: wp_operating_hours
+      friendly_name: "Operating Hours"
+      unit_of_measurement: 'h'
+      value_template: "{{ state_attr('sensor.operating_hours', 'state') }}"
+    operation_mode:
+      unique_id: wp_operation_mode
+      friendly_name: "Operation Mode"
+      value_template: "{{ state_attr('sensor.operation_mode', 'state') }}"
+    outdoor_temperature:
+      unique_id: wp_outdoor_temperature
+      friendly_name: "Outdoor Temperature"
+      unit_of_measurement: '°C'
+      value_template: "{{ state_attr('sensor.outdoor_temperature', 'state') }}"
+    overheating:
+      unique_id: wp_ovderheating
+      friendly_name: "Overheating"
+      unit_of_measurement: '°C'
+      value_template: "{{ state_attr('sensor.overheating', 'state') }}"
+    position_expansion_ventil:
+      unique_id: wp_position_expansion_ventil
+      friendly_name: "Position Expansion Ventil"
+      value_template: "{{ state_attr('sensor.position_expansion_ventil', 'state') }}"
+    press_gas_pressure:
+      unique_id: wp_press_gas_pressure
+      friendly_name: "Press Gas Pressure"
+      unit_of_measurement: 'bar'
+      value_template: "{{ state_attr('sensor.press_gas_pressure', 'state') }}"
+    press_gas_temperature:
+      unique_id: wp_press_gas_temperature
+      friendly_name: "Press Gas Temperature"
+      unit_of_measurement: '°C'
+      value_template: "{{ state_attr('sensor.press_gas_temperature', 'state') }}"
+    production_circulation_pump:
+      unique_id: wp_prodution_circulation_pump
+      friendly_name: "Production Circulation Pump"
+      unit_of_measurement: 'rpm'
+      value_template: "{{ state_attr('sensor.production_circulation_pump', 'state') }}"
+    sg2:
+      unique_id: wp_sg2
+      friendly_name: "SG2"
+      value_template: "{{ state_attr('sensor.sg2', 'state') }}"
+    sg3:
+      unique_id: wp_sg3
+      friendly_name: "SG3"
+      value_template: "{{ state_attr('sensor.sg3', 'state') }}"
+    sg4:
+      unique_id: wp_sg4
+      friendly_name: "SG4"
+      value_template: "{{ state_attr('sensor.sg4', 'state') }}"
+    spf:
+      unique_id: wp_spf
+      friendly_name: "SPF"
+      unit_of_measurement: ''
+      value_template: "{{ state_attr('sensor.spf', 'state') }}"
+    suction_gas_pressure:
+      unique_id: wp_suction_gas_pressure
+      friendly_name: "Suction Gas Pressure"
+      unit_of_measurement: 'bar'
+      value_template: "{{ state_attr('sensor.suction_gas_pressure', 'state') }}"
+    suction_gas_temperature:
+      unique_id: wp_suction_gas_temperature
+      friendly_name: "Suction Gas Temperature"
+      unit_of_measurement: '°C'
+      value_template: "{{ state_attr('sensor.suction_gas_temperature', 'state') }}"
+    total_active_power:
+      unique_id: wp_total_active_power
+      friendly_name: "Total Active Power"
+      unit_of_measurement: 'W'
+      value_template: "{{ state_attr('sensor.total_active_power', 'state') }}"
+    warmwater:
+      unique_id: wp_warm_water
+      friendly_name: "Warm Water"
+      value_template: "{{ state_attr('sensor.warmwater', 'state') }}"
+    ww_temperature:
+      unique_id: wp_ww_temperature
+      friendly_name: "WW Temperature"
+      unit_of_measurement: '°C'
+      value_template: "{{ state_attr('sensor.ww_temperature', 'state') }}"
+    ww_temperature_configured:
+      unique_id: wp_ww_temperature
+      friendly_name: "WW Temperature Configured"
+      unit_of_measurement: '°C'
+      value_template: "{{ state_attr('sensor.ww_temperature_configured', 'state') }}"
