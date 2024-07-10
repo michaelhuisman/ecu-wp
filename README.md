@@ -2,7 +2,7 @@
 
 This are the instuctions to get information from eplucon portal in Home Assissent
 
-You need have an account setup in the (Eplucon portal)[https://portaal.eplucon.nl/login?ut=user]
+You need have an account setup in the [Eplucon portal](https://portaal.eplucon.nl/login?ut=user)
 
 Also your heatingpump had to be setup there.
 
